@@ -1,4 +1,4 @@
-J/A+A/???/???    Radial velocities for HAPRS targets           (Trifonov+, 2019)
+J/A+A/???/???    Radial velocities for HAPRS targets           (Trifonov+, 2020)
 ================================================================================
 A public HARPS radial velocity database corrected for systematic errors
        T. Trifonov et al.
@@ -87,16 +87,21 @@ Byte-by-byte Description of file: HARPS_RVBank.dat
 Comments:
 
 1) The formating in this version is still not perfect !!! TBFixed
+2) Some entries and details might change.
 
 Note (1): The flags are bitwise where:
-     1 = RVs without drift correction
-     2 = significant deviating NZP
-     4 = low SNR in spectrum
-     8 = too high SNR in spectrum (saturation risk)
+    0 - normal (reliable) spectra,
+    1 - nosci frame, e.g. calibration files,
+    2 - spectra taken in I2 mode,
+    4 - spectra taken in "eggs" mode,
+    16 - coordinates too much off,
+    32 - spectra not within a nautical twilight (daytime),
+    64 - spectra with too low S/N,
+    128 - spectra with too high S/N.
 --------------------------------------------------------------------------------
 
 Acknowledgements:
-  Trifon Trifnov <trifonov@mpia.dee>
+  Trifon Trifnov <trifonov@mpia.de>
 
 ================================================================================
 (End)              Trifon Trifnov [MPIA, Germany]     15-August-2019
