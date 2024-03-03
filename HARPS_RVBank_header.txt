@@ -86,8 +86,10 @@ Byte-by-byte Description of file: HARPS_RVBank.dat
 
 Comments:
 
-1) The formating in this version is still not perfect !!! TBFixed
-2) Some entries and details might change.
+# 1) The formating in this version is still not perfect !!! TBFixed
+# 2) Some entries and details might change.
+
+1) For header, better check the .csv file version!
 
 Note (1): The flags are bitwise where:
     0 - normal (reliable) spectra,
